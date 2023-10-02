@@ -1,0 +1,153 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+} */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Add a background color */
+}
+
+topnav {
+    background-color: red;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: right;
+    justify-content: center;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: green;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: yellow;
+    color: rgb(12, 12, 12);
+
+}
+
+.topnav a:active {
+    background-color: yellow;
+    color: white
+}
+
+
+
+h1 {
+    text-align: left;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    /* Reset margin */
+    box-sizing: border-box;
+    /* Include padding and border in element's total width */
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 20px;
+    /* Add padding to create space around the form */
+    background-color: #fff;
+    /* Add background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add box shadow for a card-like appearance */
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /* Include padding and border in element's total width */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10rem;
+    border-color:#007bff;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Add margin to space out the button */
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* Add margin at the bottom of h2 */
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+    /* Reset margin for p elements */
+}
