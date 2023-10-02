@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OpenAi-GPT</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/signup.css') }}">
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="topnav">
+        <!-- <a class="active" href="index.html">Home</a> -->
+        <a href="login.html"><strong> Login</strong></a>
+        <a href="signup.html"><strong> Sign Up</strong></a>
+        </div>
+    <div style="text-align:right">
+    </div>
+    <div class="active">
+    <h1> OpenAi-GPT</h1>
+    <a class="active" href="index.html"></a>
+    </div>
+    <form method="post" action="/">
+        <label for="text_type">Select Text Type:</label>
+        <select name="text_type" id="text_type">
+            {% for type in text_types %}
+            <option value="{{ type }}">{{ type }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="text_style">Select Text Style:</label>
+        <select name="text_style" id="text_style">
+            {% for style in text_styles %}
+            <option value="{{ style }}">{{ style }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="prompt">Enter Prompt:</label>
+        <textarea name="prompt" id="prompt" rows="4" required></textarea>
+
+        <button type="submit">Generate</button>
+    </form>
+
+    {% if generated_text %}
+    <h2>Generated Text:</h2>
+    <p>{{ generated_text }}</p>
+    {% endif %}
+</body>
+
+</html>
